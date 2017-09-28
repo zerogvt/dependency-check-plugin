@@ -65,7 +65,8 @@ public class ReportParser extends AbstractAnnotationParser {
             digester.setClassLoader(ReportParser.class.getClassLoader());
 
             digester.addObjectCreate("analysis", Analysis.class);
-
+            digester.addBeanPropertySetter("analysis/projectInfo/name", "name");
+            
             final String depXpath = "analysis/dependencies/dependency";
             digester.addObjectCreate(depXpath, Dependency.class);
             digester.addBeanPropertySetter(depXpath + "/fileName");
