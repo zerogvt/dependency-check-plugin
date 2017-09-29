@@ -22,6 +22,7 @@ limitations under the License.
   <table class="pane sortable" id="warnings">
     <tr>
       <td class="pane-header">${%File}</td>
+      <td class="pane-header">${%Module}</td>
       <td class="pane-header">${%Type}</td>
       <td class="pane-header">${%Severity}</td>
       <td class="pane-header">${%CVSS}</td>
@@ -32,6 +33,7 @@ limitations under the License.
         <j:if test="${!warning.isDerived()}">
           <tr>
             <td class="pane">${warning.fileName}</td>
+            <td class="pane">${warning.moduleName}</td>
             <td class="pane">${warning.type}</td>
             <td class="pane">${warning.severity}</td>
             <td class="pane">${warning.vulnerability.cvssScore}</td>
