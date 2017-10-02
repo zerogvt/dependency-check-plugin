@@ -166,7 +166,7 @@ public class ReportParser extends AbstractAnnotationParser {
 
                 final Warning warning = new Warning(priority, vulnerability);
                 warning.setModuleName(moduleName);
-                warning.setFileName(dependency.getFileName() + " : " + collection.getName());
+                warning.setFileName(dependency.getFileName() + " ::" + collection.getName());
                 //bug.setColumnPosition(warning.getBegincolumn(), warning.getEndcolumn());
 
                 /*
